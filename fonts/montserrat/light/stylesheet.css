@@ -4,8 +4,8 @@
 
 @font-face {
     font-family: 'montserrat_light';
-    src: url('../fonts/montserrat/light/montserrat-light-webfont.woff2') format('woff2'),
-         url('../fonts/montserrat/light/montserrat-light-webfont.woff') format('woff');
+    src: url('../light/montserrat-light-webfont.woff2') format('woff2'),
+         url('../light/montserrat-light-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 

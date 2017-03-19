@@ -7,12 +7,13 @@
 
 .first_header {
 	display: flex;
+	justify-content: space-between;
 	max-width: 1020px;
 	margin: 0 auto;
 }
 
 .sex_selection, .logo, .user_actions {
-	width: 33.3%;
+	width: 22.5%;
 }
 
 .sex_selection_list, .user_actions {
@@ -21,34 +22,50 @@
 	justify-content: space-between;
 	align-items: center;
 	font-family: 'montserrat_light', Helvetica, Arial, sans-serif;
+	font-size: 13px;
+	cursor: pointer;
+}
+
+.sex_selection_list li {
+	height: 100%;
+	padding: 0 12px;
+	line-height: 45px;
+	letter-spacing: 0.11em;
+}
+
+.sex_selection_list li:hover {
+	background-color: #3D3D3D;
+}
+
+.sex_selection_list li:first-child {
+	background-color: #484848;
 }
 
 .logo {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin: 10px 0;
-}
-
-.logo:after {
-	display: flex;
-	content: '';
-	width: 5px;
-	height: 5px;
-	border: 1px solid #333;
-	border-radius: 50%;
-	margin: 0 0 6px -12px;
+	font-family: 'open_sans_condensedbold', sans-serif;
+	font-size: 32px;
+	letter-spacing: -0.7px;
 }
 
 .logo_text {
-	padding: 3px 13px 3px 7px;
+	padding: 0 3px;
 	color: #333;
 	background-color: #fff;
+	line-height: 27px;
 }
 
 .logo_text-first {
-	padding: 3px;
 	margin-right: 2px;
+}
+
+.logo_text-second:after {
+	font-family: 'about_you';
+	display: inline-block;
+	content: '\f103';
+	margin: 0 -10px;
 }
 
 .user_wish, .buy {
