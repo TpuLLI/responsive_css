@@ -1,11 +1,17 @@
-.wrapper_header {
-	max-width: 100%;
-	color: #fff;
-	background-color: #333;
-	font-size: 15px;
+body {
+  background-color: #f4f5f7;
 }
 
-.first_header {
+.wrapper_header {
+	max-width: 100%;
+}
+
+.first_header_wrapper {
+	background-color: #333;
+	color: #fff;
+}
+
+.first_header, .second_header {
 	display: flex;
 	justify-content: space-between;
 	max-width: 1020px;
@@ -16,17 +22,20 @@
 	width: 22.5%;
 }
 
-.sex_selection_list, .user_actions {
+.sex_selection_list, .user_actions, .second_header_menu  {
 	height: 45px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	font-family: 'montserrat_light', Helvetica, Arial, sans-serif;
-	font-size: 13px;
 	cursor: pointer;
+	font-size: 12px;
 }
 
-.sex_selection_list li {
+.sex_selection_list, .user_actions {
+	font-family: 'montserrat_light', Helvetica, Arial, sans-serif;
+}
+
+.sex_selection_list li, .second_header_menu li {
 	height: 100%;
 	padding: 0 12px;
 	line-height: 43px;
@@ -105,3 +114,52 @@
 .user_wish, .buy {
 	line-height: 48px;
 }
+
+/*second_header*/
+
+.second_header_wrapper {
+	background-color: #fff;
+	color: #333;
+}
+
+.second_header {
+	background-color: #fff;
+}
+
+.second_header_menu {
+	letter-spacing: 0.02em;
+}
+
+.label_new:after {
+	content: 'Neu';
+	font-family: 'montserrat_light', Helvetica, Arial, sans-serif;
+	padding: 4px;
+	background-color: #333;
+	color: #fff;
+	border-radius: 12px;
+	font-size: 9px;
+	margin-left: 2px;
+	vertical-align: bottom;
+}
+
+.sale {
+	color: #D1395D;
+}
+
+.second_header form {
+	width: 100%;
+}
+
+.search_form {
+	width: 100%;
+	color: #7a7b7c;
+	font-size: 13px;
+	display: flex;
+}
+
+.user_search {
+	background-color: #f4f5f7;
+	width: 100%;
+	border: none;
+}
+
