@@ -28,7 +28,7 @@ body {
 	justify-content: space-between;
 	align-items: center;
 	cursor: pointer;
-	font-size: 12px;
+	font-size: 13px;
 }
 
 .sex_selection_list, .user_actions {
@@ -39,6 +39,9 @@ body {
 	height: 100%;
 	padding: 0 12px;
 	line-height: 43px;
+}
+
+.sex_selection_list {
 	letter-spacing: 0.11em;
 }
 
@@ -113,6 +116,7 @@ body {
 
 .user_wish, .buy {
 	line-height: 48px;
+	padding: 0 8px;
 }
 
 /*second_header*/
@@ -127,17 +131,37 @@ body {
 }
 
 .second_header_menu {
-	letter-spacing: 0.02em;
+	letter-spacing: 0.06em;
 }
 
-.label_new:after {
+.second_header_menu a {
+	padding-bottom: 4px;
+	position: relative;
+}
+
+.second_header_menu li:hover a {
+	border-bottom: 2px solid #c5c7c8;
+}
+
+.second_header_menu li:hover a:before {
+	font-family: 'about_you';
+	font-size: 12px;
+	content: '\f120';
+	color: #c5c7c8;
+	position: absolute;
+	top: 28%;
+	left: 50%;
+	margin-left: -6px;
+}
+
+.label_new a:after {
 	content: 'Neu';
 	font-family: 'montserrat_light', Helvetica, Arial, sans-serif;
 	padding: 4px;
 	background-color: #333;
 	color: #fff;
 	border-radius: 12px;
-	font-size: 9px;
+	font-size: 8px;
 	margin-left: 2px;
 	vertical-align: bottom;
 }
@@ -146,20 +170,45 @@ body {
 	color: #D1395D;
 }
 
-.second_header form {
+.header_search {
 	width: 100%;
 }
 
+.header_search form {
+	margin-left: 7%;
+}
+
 .search_form {
-	width: 100%;
+	max-width: 100%;
 	color: #7a7b7c;
 	font-size: 13px;
 	display: flex;
+	height: 35px;
+	margin-top: 5px;
 }
 
 .user_search {
 	background-color: #f4f5f7;
 	width: 100%;
 	border: none;
+	font-size: 13px;
+	padding: 6px 30px 5px 15px;
+	outline: none;
+	font-family: 'montserrat_light', Helvetica, Arial, sans-serif;
+}
+
+.user_search_button {
+	border: none;
+	background-color: #f4f5f7;
+	outline: none;
+	cursor: pointer;
+}
+
+.user_search_button:before {
+	font-family: 'about_you';
+	content: '\f173';
+	font-size: 17px;
+	color: #333;
+	padding-right: 3px;
 }
 
